@@ -16,12 +16,6 @@ This project analyzes historical global temperature anomalies using NASA GISTEMP
 ## File
 - `climate_prediction.ipynb` → Jupyter Notebook version, including explanatory comments and step-by-step execution
 
-## Requirements
-Install dependencies, if necessary, with:
-```bash
-pip install pandas numpy matplotlib scikit-learn requests
-```
-
 ## How to Run
 Open in JupyterLab or Jupyter Notebook:
 ```bash
