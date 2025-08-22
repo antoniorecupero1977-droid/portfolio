@@ -13,7 +13,7 @@ This project analyzes historical global temperature anomalies using NASA GISTEMP
   - **Polynomial regression prediction** (degree 3)
 - Visualize historical data along with both forecasts on a single plot
 
-## Files
+## File
 - `climate_prediction.ipynb` → Jupyter Notebook version, including explanatory comments and step-by-step execution
 
 ## Requirements
