@@ -52,6 +52,22 @@ These values provide an indication of model fit:
 - A higher R² means the model explains the data better.  
 - A lower RMSE means the predictions are closer to the observed anomalies.  
 
-Note: Even if the polynomial model shows a better fit (higher R²), extrapolation beyond the historical range can be unstable.
-These statistical forecasts should not be considered climate scenario models, but rather illustrative trend projections.
+⚠️ Note: Even if the polynomial model shows a better fit (higher R²), extrapolation beyond the historical range can be unstable. These statistical forecasts should not be considered climate scenario models, but rather illustrative trend projections.
 
+## Results Interpretation
+Based on the evaluation metrics obtained:
+
+- **Linear Regression**:  
+  - R² ≈ 0.76 → explains ~76% of the variability in the historical data  
+  - RMSE ≈ 0.19°C → average prediction error on historical anomalies  
+  - Captures the long-term trend but underestimates recent acceleration
+
+- **Polynomial Regression (degree 3)**:  
+  - R² ≈ 0.91 → explains ~91% of the variability, significantly better fit  
+  - RMSE ≈ 0.12°C → lower average error  
+  - Follows more closely the recent upward trend
+
+### Takeaway
+- The polynomial model statistically fits the past data better.  
+- The linear model is simpler and more stable but less accurate in describing recent decades.  
+- ⚠️ Extrapolation beyond the historical range (after 2025) should be interpreted cautiously, especially for the polynomial model. These results are illustrative and **not a substitute for physics-based climate projections (e.g., CMIP/IPCC scenarios)**.
