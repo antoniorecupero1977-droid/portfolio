@@ -40,3 +40,18 @@ The script will:
 2. Clean and process the data
 3. Generate predictions up to the year 2075
 4. Save a plot (`climate_prediction_plot.png`) showing historical and predicted trends
+
+## Model Evaluation
+Both the Python script and the Jupyter Notebook include a basic statistical evaluation of the models on the historical dataset (1880–present).  
+The following metrics are computed for both **linear** and **polynomial** regression:
+
+- **R² (Coefficient of Determination)** → how much variance in the data is explained by the model  
+- **RMSE (Root Mean Squared Error)** → average prediction error on historical data  
+
+These values provide an indication of model fit:  
+- A higher R² means the model explains the data better.  
+- A lower RMSE means the predictions are closer to the observed anomalies.  
+
+Note: Even if the polynomial model shows a better fit (higher R²), extrapolation beyond the historical range can be unstable.
+These statistical forecasts should not be considered climate scenario models, but rather illustrative trend projections.
+
